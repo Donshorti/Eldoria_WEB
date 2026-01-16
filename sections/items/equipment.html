@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Equipamiento de Eldoria - Armas, armaduras y accesorios para los aventureros.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap"
+        rel="stylesheet">
+    <title>Equipamiento - Eldoria Wiki</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+
+<body>
+    <div class="particles" id="particles"></div>
+
+    <header>
+        <div class="logo-container">
+            <a href="../../index.html" class="home-link">
+                <svg class="crown-icon" viewBox="0 0 100 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="goldGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" stop-color="#f4d675" />
+                            <stop offset="50%" stop-color="#d4a84b" />
+                            <stop offset="100%" stop-color="#8b6914" />
+                        </linearGradient>
+                    </defs>
+                    <path d="M50 5L65 30L85 15L75 50H25L15 15L35 30L50 5Z" fill="url(#goldGrad)" stroke="#f4d675"
+                        stroke-width="2" />
+                    <rect x="20" y="50" width="60" height="15" rx="3" fill="url(#goldGrad)" stroke="#f4d675"
+                        stroke-width="2" />
+                    <circle cx="50" cy="25" r="5" fill="#8b1a1a" />
+                    <circle cx="30" cy="35" r="4" fill="#4a1a6b" />
+                    <circle cx="70" cy="35" r="4" fill="#1a4a2e" />
+                    <path d="M25 70H75" stroke="#d4a84b" stroke-width="3" stroke-linecap="round" />
+                </svg>
+            </a>
+        </div>
+        <h1>Equipamiento</h1>
+        <p class="subtitle">Arsenal del Aventurero</p>
+        <div class="divider">
+            <div class="divider-line"></div>
+            <div class="divider-gem"></div>
+            <div class="divider-line"></div>
+        </div>
+    </header>
+
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <div class="sidebar-logo">
+                <svg class="crown-icon" viewBox="0 0 100 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="sidebarGoldGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" stop-color="#f4d675" />
+                            <stop offset="50%" stop-color="#d4a84b" />
+                            <stop offset="100%" stop-color="#8b6914" />
+                        </linearGradient>
+                    </defs>
+                    <path d="M50 5L65 30L85 15L75 50H25L15 15L35 30L50 5Z" fill="url(#sidebarGoldGrad)" stroke="#f4d675"
+                        stroke-width="2" />
+                    <rect x="20" y="50" width="60" height="15" rx="3" fill="url(#sidebarGoldGrad)" stroke="#f4d675"
+                        stroke-width="2" />
+                </svg>
+            </div>
+            <div class="sidebar-title">Eldoria Wiki</div>
+        </div>
+        <ul class="sidebar-menu">
+            <li class="sidebar-item">
+                <a href="../../index.html" class="sidebar-link">
+                    <span class="sidebar-icon">🏠</span>
+                    <span>Inicio</span>
+                </a>
+            </li>
+
+            <li class="sidebar-section-header">Objetos</li>
+            <li class="sidebar-item">
+                <a href="fruits.html" class="sidebar-link sidebar-link-sub">
+                    <span class="sidebar-icon">🍎</span>
+                    <span>Frutas</span>
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a href="equipment.html" class="sidebar-link sidebar-link-sub active">
+                    <span class="sidebar-icon">⚔️</span>
+                    <span>Equipo</span>
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a href="rewards.html" class="sidebar-link sidebar-link-sub">
+                    <span class="sidebar-icon">🏆</span>
+                    <span>Premios</span>
+                </a>
+            </li>
+
+            <li class="sidebar-section-header">Mapa</li>
+            <li class="sidebar-item">
+                <a href="../map/cities.html" class="sidebar-link sidebar-link-sub">
+                    <span class="sidebar-icon">🏰</span>
+                    <span>Ciudades</span>
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a href="../map/dungeons.html" class="sidebar-link sidebar-link-sub">
+                    <span class="sidebar-icon">⛓️</span>
+                    <span>Mazmorras</span>
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a href="../map/bossarenas.html" class="sidebar-link sidebar-link-sub">
+                    <span class="sidebar-icon">👹</span>
+                    <span>Jefes</span>
+                </a>
+            </li>
+
+            <li class="sidebar-section-header">Historia</li>
+            <li class="sidebar-item">
+                <a href="../history/characters.html" class="sidebar-link sidebar-link-sub">
+                    <span class="sidebar-icon">👥</span>
+                    <span>Personajes</span>
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a href="../history/lore.html" class="sidebar-link sidebar-link-sub">
+                    <span class="sidebar-icon">📜</span>
+                    <span>Lore</span>
+                </a>
+            </li>
+        </ul>
+        <div class="sidebar-footer">
+            <p>Eldoria &copy; 2026</p>
+        </div>
+    </aside>
+
+    <main>
+        <section class="welcome">
+            <h2>Armas y Armaduras</h2>
+            <p>El equipamiento adecuado puede significar la diferencia entre la victoria y la derrota. Desde espadas
+                forjadas en el fuego de dragones hasta armaduras bendecidas por los dioses, Eldoria ofrece un vasto
+                arsenal para todo tipo de guerrero.</p>
+        </section>
+
+        <!-- ARMAS -->
+        <section class="category-section">
+            <div class="category-header">
+                <div class="category-icon">⚔️</div>
+                <h2>Armas</h2>
+                <p class="category-desc">Instrumentos de batalla para todo estilo de combate</p>
+            </div>
+            <div class="content-grid">
+                <article class="content-card rarity-legendary">
+                    <div class="card-header">
+                        <span class="card-icon">🗡️</span>
+                        <div class="card-title">
+                            <h3>Excálibur de las Sombras</h3>
+                            <span class="rarity-tag">Legendaria</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-description">Espada oscura forjada en el Abismo. Drena la vida de los enemigos y
+                            la transfiere al portador.</p>
+                        <div class="card-stats">
+                            <div class="stat"><span class="stat-label">Daño:</span> 450-520</div>
+                            <div class="stat"><span class="stat-label">Tipo:</span> Espada a dos manos</div>
+                            <div class="stat"><span class="stat-label">Nivel req:</span> 80</div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="content-card rarity-epic">
+                    <div class="card-header">
+                        <span class="card-icon">🏹</span>
+                        <div class="card-title">
+                            <h3>Arco del Viento Eterno</h3>
+                            <span class="rarity-tag">Épico</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-description">Arco élfico que dispara flechas que nunca fallan su objetivo.
+                            Guiadas por el viento mismo.</p>
+                        <div class="card-stats">
+                            <div class="stat"><span class="stat-label">Daño:</span> 280-350</div>
+                            <div class="stat"><span class="stat-label">Tipo:</span> Arco largo</div>
+                            <div class="stat"><span class="stat-label">Nivel req:</span> 60</div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="content-card rarity-rare">
+                    <div class="card-header">
+                        <span class="card-icon">🪄</span>
+                        <div class="card-title">
+                            <h3>Báculo del Archimago</h3>
+                            <span class="rarity-tag">Raro</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-description">Bastón de poder que amplifica todos los hechizos. Tallado de un
+                            roble milenario.</p>
+                        <div class="card-stats">
+                            <div class="stat"><span class="stat-label">Poder Mágico:</span> +150</div>
+                            <div class="stat"><span class="stat-label">Tipo:</span> Báculo</div>
+                            <div class="stat"><span class="stat-label">Nivel req:</span> 45</div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="content-card rarity-common">
+                    <div class="card-header">
+                        <span class="card-icon">🔨</span>
+                        <div class="card-title">
+                            <h3>Martillo del Herrero</h3>
+                            <span class="rarity-tag">Común</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-description">Un martillo sólido y confiable. Simple pero efectivo en manos
+                            expertas.</p>
+                        <div class="card-stats">
+                            <div class="stat"><span class="stat-label">Daño:</span> 80-110</div>
+                            <div class="stat"><span class="stat-label">Tipo:</span> Martillo</div>
+                            <div class="stat"><span class="stat-label">Nivel req:</span> 10</div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- ARMADURAS -->
+        <section class="category-section">
+            <div class="category-header">
+                <div class="category-icon">🛡️</div>
+                <h2>Armaduras</h2>
+                <p class="category-desc">Protección para los valientes guerreros</p>
+            </div>
+            <div class="content-grid">
+                <article class="content-card rarity-mythic">
+                    <div class="card-header">
+                        <span class="card-icon">👑</span>
+                        <div class="card-title">
+                            <h3>Armadura del Rey Dragón</h3>
+                            <span class="rarity-tag">Mítica</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-description">Forjada con escamas de dragón antiguo. Otorga inmunidad al fuego y
+                            resistencia legendaria.</p>
+                        <div class="card-stats">
+                            <div class="stat"><span class="stat-label">Defensa:</span> 850</div>
+                            <div class="stat"><span class="stat-label">Tipo:</span> Armadura pesada</div>
+                            <div class="stat"><span class="stat-label">Nivel req:</span> 90</div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="content-card rarity-epic">
+                    <div class="card-header">
+                        <span class="card-icon">🌙</span>
+                        <div class="card-title">
+                            <h3>Túnica de la Luna</h3>
+                            <span class="rarity-tag">Épica</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-description">Vestimenta tejida con luz de luna. Incrementa el poder mágico y la
+                            regeneración de maná.</p>
+                        <div class="card-stats">
+                            <div class="stat"><span class="stat-label">Defensa:</span> 180</div>
+                            <div class="stat"><span class="stat-label">Tipo:</span> Túnica de mago</div>
+                            <div class="stat"><span class="stat-label">Nivel req:</span> 55</div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="content-card rarity-rare">
+                    <div class="card-header">
+                        <span class="card-icon">🦊</span>
+                        <div class="card-title">
+                            <h3>Cuero del Cazador Furtivo</h3>
+                            <span class="rarity-tag">Raro</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-description">Armadura ligera que mejora el sigilo y la velocidad de movimiento.
+                        </p>
+                        <div class="card-stats">
+                            <div class="stat"><span class="stat-label">Defensa:</span> 320</div>
+                            <div class="stat"><span class="stat-label">Tipo:</span> Armadura de cuero</div>
+                            <div class="stat"><span class="stat-label">Nivel req:</span> 40</div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- ACCESORIOS -->
+        <section class="category-section">
+            <div class="category-header">
+                <div class="category-icon">💍</div>
+                <h2>Accesorios</h2>
+                <p class="category-desc">Joyas y amuletos con poderes místicos</p>
+            </div>
+            <div class="content-grid">
+                <article class="content-card rarity-legendary">
+                    <div class="card-header">
+                        <span class="card-icon">💎</span>
+                        <div class="card-title">
+                            <h3>Anillo del Infinito</h3>
+                            <span class="rarity-tag">Legendario</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-description">Anillo que incrementa todas las estadísticas. Creado por los dioses
+                            primordiales.</p>
+                        <div class="card-stats">
+                            <div class="stat"><span class="stat-label">Bonificación:</span> +10% a todo</div>
+                            <div class="stat"><span class="stat-label">Tipo:</span> Anillo</div>
+                            <div class="stat"><span class="stat-label">Nivel req:</span> 75</div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="content-card rarity-epic">
+                    <div class="card-header">
+                        <span class="card-icon">📿</span>
+                        <div class="card-title">
+                            <h3>Amuleto del Guardián</h3>
+                            <span class="rarity-tag">Épico</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-description">Protege de ataques críticos y otorga una segunda oportunidad en
+                            combate.</p>
+                        <div class="card-stats">
+                            <div class="stat"><span class="stat-label">Efecto:</span> Revivir 1 vez</div>
+                            <div class="stat"><span class="stat-label">Tipo:</span> Amuleto</div>
+                            <div class="stat"><span class="stat-label">Nivel req:</span> 50</div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <svg class="footer-emblem" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="25" cy="25" r="23" stroke="#d4a84b" stroke-width="2" fill="none" />
+            <path d="M25 8L32 22L46 25L32 28L25 42L18 28L4 25L18 22L25 8Z" fill="#d4a84b" opacity="0.8" />
+        </svg>
+        <p>Los Archivos de Eldoria &copy; 2026</p>
+        <p style="margin-top: 10px; opacity: 0.6;">
+            <a href="../../index.html">Volver al Inicio</a>
+        </p>
+    </footer>
+
+    <script src="../../js/script.js"></script>
+</body>
+
+</html>

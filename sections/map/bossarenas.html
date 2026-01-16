@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Arenas de Jefes de Eldoria - Los monstruos más poderosos del reino y cómo derrotarlos.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap"
+        rel="stylesheet">
+    <title>Zonas de Jefes - Eldoria Wiki</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+
+<body>
+    <div class="particles" id="particles"></div>
+
+    <header>
+        <div class="logo-container">
+            <a href="../../index.html" class="home-link">
+                <svg class="crown-icon" viewBox="0 0 100 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="goldGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" stop-color="#f4d675" />
+                            <stop offset="50%" stop-color="#d4a84b" />
+                            <stop offset="100%" stop-color="#8b6914" />
+                        </linearGradient>
+                    </defs>
+                    <path d="M50 5L65 30L85 15L75 50H25L15 15L35 30L50 5Z" fill="url(#goldGrad)" stroke="#f4d675"
+                        stroke-width="2" />
+                    <rect x="20" y="50" width="60" height="15" rx="3" fill="url(#goldGrad)" stroke="#f4d675"
+                        stroke-width="2" />
+                    <circle cx="50" cy="25" r="5" fill="#8b1a1a" />
+                    <circle cx="30" cy="35" r="4" fill="#4a1a6b" />
+                    <circle cx="70" cy="35" r="4" fill="#1a4a2e" />
+                    <path d="M25 70H75" stroke="#d4a84b" stroke-width="3" stroke-linecap="round" />
+                </svg>
+            </a>
+        </div>
+        <h1>Zonas de Jefes</h1>
+        <p class="subtitle">Las Bestias Legendarias de Eldoria</p>
+        <div class="divider">
+            <div class="divider-line"></div>
+            <div class="divider-gem"></div>
+            <div class="divider-line"></div>
+        </div>
+    </header>
+
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <div class="sidebar-logo">
+                <svg class="crown-icon" viewBox="0 0 100 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="sidebarGoldGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" stop-color="#f4d675" />
+                            <stop offset="50%" stop-color="#d4a84b" />
+                            <stop offset="100%" stop-color="#8b6914" />
+                        </linearGradient>
+                    </defs>
+                    <path d="M50 5L65 30L85 15L75 50H25L15 15L35 30L50 5Z" fill="url(#sidebarGoldGrad)" stroke="#f4d675"
+                        stroke-width="2" />
+                    <rect x="20" y="50" width="60" height="15" rx="3" fill="url(#sidebarGoldGrad)" stroke="#f4d675"
+                        stroke-width="2" />
+                </svg>
+            </div>
+            <div class="sidebar-title">Eldoria Wiki</div>
+        </div>
+        <ul class="sidebar-menu">
+            <li class="sidebar-item">
+                <a href="../../index.html" class="sidebar-link">
+                    <span class="sidebar-icon">🏠</span>
+                    <span>Inicio</span>
+                </a>
+            </li>
+
+            <li class="sidebar-section-header">Objetos</li>
+            <li class="sidebar-item">
+                <a href="../items/fruits.html" class="sidebar-link sidebar-link-sub">
+                    <span class="sidebar-icon">🍎</span>
+                    <span>Frutas</span>
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a href="../items/equipment.html" class="sidebar-link sidebar-link-sub">
+                    <span class="sidebar-icon">⚔️</span>
+                    <span>Equipo</span>
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a href="../items/rewards.html" class="sidebar-link sidebar-link-sub">
+                    <span class="sidebar-icon">🏆</span>
+                    <span>Premios</span>
+                </a>
+            </li>
+
+            <li class="sidebar-section-header">Mapa</li>
+            <li class="sidebar-item">
+                <a href="cities.html" class="sidebar-link sidebar-link-sub">
+                    <span class="sidebar-icon">🏰</span>
+                    <span>Ciudades</span>
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a href="dungeons.html" class="sidebar-link sidebar-link-sub">
+                    <span class="sidebar-icon">⛓️</span>
+                    <span>Mazmorras</span>
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a href="bossarenas.html" class="sidebar-link sidebar-link-sub active">
+                    <span class="sidebar-icon">👹</span>
+                    <span>Jefes</span>
+                </a>
+            </li>
+
+            <li class="sidebar-section-header">Historia</li>
+            <li class="sidebar-item">
+                <a href="../history/characters.html" class="sidebar-link sidebar-link-sub">
+                    <span class="sidebar-icon">👥</span>
+                    <span>Personajes</span>
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a href="../history/lore.html" class="sidebar-link sidebar-link-sub">
+                    <span class="sidebar-icon">📜</span>
+                    <span>Lore</span>
+                </a>
+            </li>
+        </ul>
+        <div class="sidebar-footer">
+            <p>Eldoria &copy; 2026</p>
+        </div>
+    </aside>
+
+    <main>
+        <section class="welcome">
+            <h2>Enfréntate a lo Imposible</h2>
+            <p>Los jefes de Eldoria son criaturas de poder inimaginable. Derrotarlos requiere estrategia, trabajo en
+                equipo y el mejor equipamiento. Pero las recompensas son legendarias...</p>
+        </section>
+
+        <!-- JEFES DE MUNDO -->
+        <section class="category-section">
+            <div class="category-header">
+                <div class="category-icon">🐉</div>
+                <h2>Jefes de Mundo</h2>
+                <p class="category-desc">Criaturas que amenazan todo el reino - Requieren raid de 40 jugadores</p>
+            </div>
+            <div class="content-grid">
+                <article class="content-card rarity-mythic">
+                    <div class="card-header">
+                        <span class="card-icon">🐲</span>
+                        <div class="card-title">
+                            <h3>Wyrm de las Sombras</h3>
+                            <span class="rarity-tag">Jefe de Mundo</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-description">El dragón más antiguo de Eldoria. Despierta cada luna nueva para
+                            devastar todo a su paso. Sus escamas absorben la luz.</p>
+                        <div class="card-stats">
+                            <div class="stat"><span class="stat-label">Nivel:</span> 100</div>
+                            <div class="stat"><span class="stat-label">HP:</span> 50,000,000</div>
+                            <div class="stat"><span class="stat-label">Jugadores:</span> 40</div>
+                            <div class="stat"><span class="stat-label">Tiempo límite:</span> 30 min</div>
+                        </div>
+                        <div class="card-abilities">
+                            <h4>Mecánicas:</h4>
+                            <ul>
+                                <li>Aliento de Sombras - Daño en cono, esquivar</li>
+                                <li>Eclipse Total - Oscuridad, usar antorchas</li>
+                                <li>Invocación - Añade dragones menores</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="content-card rarity-mythic">
+                    <div class="card-header">
+                        <span class="card-icon">👹</span>
+                        <div class="card-title">
+                            <h3>Titán de la Montaña</h3>
+                            <span class="rarity-tag">Jefe de Mundo</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-description">Un coloso de piedra viviente que duerme dentro del Monte Pyrrhus.
+                            Sus pasos causan terremotos.</p>
+                        <div class="card-stats">
+                            <div class="stat"><span class="stat-label">Nivel:</span> 95</div>
+                            <div class="stat"><span class="stat-label">HP:</span> 35,000,000</div>
+                            <div class="stat"><span class="stat-label">Jugadores:</span> 40</div>
+                            <div class="stat"><span class="stat-label">Tiempo límite:</span> 25 min</div>
+                        </div>
+                        <div class="card-abilities">
+                            <h4>Mecánicas:</h4>
+                            <ul>
+                                <li>Terremoto - Daño en área, saltar</li>
+                                <li>Lanzar Roca - Apuntar a sanadores</li>
+                                <li>Endurecimiento - Reducir daño físico</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- DRAGONES ANCESTRALES -->
+        <section class="category-section">
+            <div class="category-header">
+                <div class="category-icon">🔥</div>
+                <h2>Dragones Ancestrales</h2>
+                <p class="category-desc">Los cinco dragones elementales - Requieren raid de 20 jugadores</p>
+            </div>
+            <div class="content-grid">
+                <article class="content-card rarity-legendary">
+                    <div class="card-header">
+                        <span class="card-icon">🔥</span>
+                        <div class="card-title">
+                            <h3>Ignis el Calcinador</h3>
+                            <span class="rarity-tag">Dragón de Fuego</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-description">Guardián del Monte Pyrrhus. Su fuego puede derretir el adamantino.
+                        </p>
+                        <div class="card-stats">
+                            <div class="stat"><span class="stat-label">Nivel:</span> 85</div>
+                            <div class="stat"><span class="stat-label">HP:</span> 15,000,000</div>
+                            <div class="stat"><span class="stat-label">Elemento:</span> Fuego</div>
+                        </div>
+                        <div class="card-abilities">
+                            <h4>Drops:</h4>
+                            <ul>
+                                <li>Escama de Dragón Ígneo</li>
+                                <li>Fragmento de Baya de Brasas</li>
+                                <li>Espada Flamígera</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="content-card rarity-legendary">
+                    <div class="card-header">
+                        <span class="card-icon">❄️</span>
+                        <div class="card-title">
+                            <h3>Glacius el Eterno</h3>
+                            <span class="rarity-tag">Dragón de Hielo</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-description">Señor de los Picos del Invierno Eterno. Su aliento congela el alma
+                            misma.</p>
+                        <div class="card-stats">
+                            <div class="stat"><span class="stat-label">Nivel:</span> 85</div>
+                            <div class="stat"><span class="stat-label">HP:</span> 15,000,000</div>
+                            <div class="stat"><span class="stat-label">Elemento:</span> Hielo</div>
+                        </div>
+                        <div class="card-abilities">
+                            <h4>Drops:</h4>
+                            <ul>
+                                <li>Escama de Dragón Gélido</li>
+                                <li>Fragmento de Manzana de Escarcha</li>
+                                <li>Cetro del Invierno</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="content-card rarity-legendary">
+                    <div class="card-header">
+                        <span class="card-icon">⚡</span>
+                        <div class="card-title">
+                            <h3>Tempestus el Furioso</h3>
+                            <span class="rarity-tag">Dragón de Rayo</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-description">Vive en las nubes de tormenta. Su cuerpo es pura electricidad.</p>
+                        <div class="card-stats">
+                            <div class="stat"><span class="stat-label">Nivel:</span> 85</div>
+                            <div class="stat"><span class="stat-label">HP:</span> 15,000,000</div>
+                            <div class="stat"><span class="stat-label">Elemento:</span> Rayo</div>
+                        </div>
+                        <div class="card-abilities">
+                            <h4>Drops:</h4>
+                            <ul>
+                                <li>Escama Electrificada</li>
+                                <li>Fragmento de Uva de Tormenta</li>
+                                <li>Arco del Relámpago</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- JEFES DE MAZMORRA -->
+        <section class="category-section">
+            <div class="category-header">
+                <div class="category-icon">💀</div>
+                <h2>Jefes de Mazmorra</h2>
+                <p class="category-desc">Guardianes de las profundidades - Grupos de 5 jugadores</p>
+            </div>
+            <div class="content-grid">
+                <article class="content-card rarity-epic">
+                    <div class="card-header">
+                        <span class="card-icon">🧙</span>
+                        <div class="card-title">
+                            <h3>El Liche Eterno</h3>
+                            <span class="rarity-tag">No-muerto</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-description">Un hechicero que vendió su alma por la inmortalidad. Controla un
+                            ejército de muertos.</p>
+                        <div class="card-stats">
+                            <div class="stat"><span class="stat-label">Nivel:</span> 60</div>
+                            <div class="stat"><span class="stat-label">HP:</span> 2,500,000</div>
+                            <div class="stat"><span class="stat-label">Mazmorra:</span> Cripta Olvidada</div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="content-card rarity-epic">
+                    <div class="card-header">
+                        <span class="card-icon">🕷️</span>
+                        <div class="card-title">
+                            <h3>Aracnia la Reina</h3>
+                            <span class="rarity-tag">Bestia</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-description">Araña gigante que gobierna un nido en las profundidades. Sus
+                            telarañas son indestructibles.</p>
+                        <div class="card-stats">
+                            <div class="stat"><span class="stat-label">Nivel:</span> 45</div>
+                            <div class="stat"><span class="stat-label">HP:</span> 1,200,000</div>
+                            <div class="stat"><span class="stat-label">Mazmorra:</span> Cavernas de Seda</div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="content-card rarity-rare">
+                    <div class="card-header">
+                        <span class="card-icon">🦴</span>
+                        <div class="card-title">
+                            <h3>General Esqueleto</h3>
+                            <span class="rarity-tag">No-muerto</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-description">Un antiguo general que sigue liderando a sus tropas desde
+                            ultratumba.</p>
+                        <div class="card-stats">
+                            <div class="stat"><span class="stat-label">Nivel:</span> 30</div>
+                            <div class="stat"><span class="stat-label">HP:</span> 500,000</div>
+                            <div class="stat"><span class="stat-label">Mazmorra:</span> Catacumbas Reales</div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <svg class="footer-emblem" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="25" cy="25" r="23" stroke="#d4a84b" stroke-width="2" fill="none" />
+            <path d="M25 8L32 22L46 25L32 28L25 42L18 28L4 25L18 22L25 8Z" fill="#d4a84b" opacity="0.8" />
+        </svg>
+        <p>Los Archivos de Eldoria &copy; 2026</p>
+        <p style="margin-top: 10px; opacity: 0.6;">
+            <a href="../../index.html">Volver al Inicio</a>
+        </p>
+    </footer>
+
+    <script src="../../js/script.js"></script>
+</body>
+
+</html>

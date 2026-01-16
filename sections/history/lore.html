@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tradiciones y Leyendas de Eldoria - La historia y mitología del reino.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap"
+        rel="stylesheet">
+    <title>Tradiciones y Leyendas - Eldoria Wiki</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+
+<body>
+    <div class="particles" id="particles"></div>
+
+    <header>
+        <div class="logo-container">
+            <a href="../../index.html" class="home-link">
+                <svg class="crown-icon" viewBox="0 0 100 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="goldGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" stop-color="#f4d675" />
+                            <stop offset="50%" stop-color="#d4a84b" />
+                            <stop offset="100%" stop-color="#8b6914" />
+                        </linearGradient>
+                    </defs>
+                    <path d="M50 5L65 30L85 15L75 50H25L15 15L35 30L50 5Z" fill="url(#goldGrad)" stroke="#f4d675"
+                        stroke-width="2" />
+                    <rect x="20" y="50" width="60" height="15" rx="3" fill="url(#goldGrad)" stroke="#f4d675"
+                        stroke-width="2" />
+                    <circle cx="50" cy="25" r="5" fill="#8b1a1a" />
+                    <circle cx="30" cy="35" r="4" fill="#4a1a6b" />
+                    <circle cx="70" cy="35" r="4" fill="#1a4a2e" />
+                    <path d="M25 70H75" stroke="#d4a84b" stroke-width="3" stroke-linecap="round" />
+                </svg>
+            </a>
+        </div>
+        <h1>Tradiciones del Mundo</h1>
+        <p class="subtitle">Las Leyendas Ancestrales de Eldoria</p>
+        <div class="divider">
+            <div class="divider-line"></div>
+            <div class="divider-gem"></div>
+            <div class="divider-line"></div>
+        </div>
+    </header>
+
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <div class="sidebar-logo">
+                <svg class="crown-icon" viewBox="0 0 100 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="sidebarGoldGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" stop-color="#f4d675" />
+                            <stop offset="50%" stop-color="#d4a84b" />
+                            <stop offset="100%" stop-color="#8b6914" />
+                        </linearGradient>
+                    </defs>
+                    <path d="M50 5L65 30L85 15L75 50H25L15 15L35 30L50 5Z" fill="url(#sidebarGoldGrad)" stroke="#f4d675"
+                        stroke-width="2" />
+                    <rect x="20" y="50" width="60" height="15" rx="3" fill="url(#sidebarGoldGrad)" stroke="#f4d675"
+                        stroke-width="2" />
+                </svg>
+            </div>
+            <div class="sidebar-title">Eldoria Wiki</div>
+        </div>
+        <ul class="sidebar-menu">
+            <li class="sidebar-item">
+                <a href="../../index.html" class="sidebar-link">
+                    <span class="sidebar-icon">🏠</span>
+                    <span>Inicio</span>
+                </a>
+            </li>
+
+            <li class="sidebar-section-header">Objetos</li>
+            <li class="sidebar-item">
+                <a href="../items/fruits.html" class="sidebar-link sidebar-link-sub">
+                    <span class="sidebar-icon">🍎</span>
+                    <span>Frutas</span>
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a href="../items/equipment.html" class="sidebar-link sidebar-link-sub">
+                    <span class="sidebar-icon">⚔️</span>
+                    <span>Equipo</span>
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a href="../items/rewards.html" class="sidebar-link sidebar-link-sub">
+                    <span class="sidebar-icon">🏆</span>
+                    <span>Premios</span>
+                </a>
+            </li>
+
+            <li class="sidebar-section-header">Mapa</li>
+            <li class="sidebar-item">
+                <a href="../map/cities.html" class="sidebar-link sidebar-link-sub">
+                    <span class="sidebar-icon">🏰</span>
+                    <span>Ciudades</span>
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a href="../map/dungeons.html" class="sidebar-link sidebar-link-sub">
+                    <span class="sidebar-icon">⛓️</span>
+                    <span>Mazmorras</span>
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a href="../map/bossarenas.html" class="sidebar-link sidebar-link-sub">
+                    <span class="sidebar-icon">👹</span>
+                    <span>Jefes</span>
+                </a>
+            </li>
+
+            <li class="sidebar-section-header">Historia</li>
+            <li class="sidebar-item">
+                <a href="characters.html" class="sidebar-link sidebar-link-sub">
+                    <span class="sidebar-icon">👥</span>
+                    <span>Personajes</span>
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a href="lore.html" class="sidebar-link sidebar-link-sub active">
+                    <span class="sidebar-icon">📜</span>
+                    <span>Lore</span>
+                </a>
+            </li>
+        </ul>
+        <div class="sidebar-footer">
+            <p>Eldoria &copy; 2026</p>
+        </div>
+    </aside>
+
+    <main>
+        <section class="welcome">
+            <h2>Las Crónicas Eternas</h2>
+            <p>La historia de Eldoria se extiende por milenios, forjada por dioses, héroes y cataclismos. Cada leyenda
+                contiene verdades olvidadas que pueden ayudar a los aventureros en su camino.</p>
+        </section>
+
+        <!-- CREACIÓN DEL MUNDO -->
+        <section class="category-section">
+            <div class="category-header">
+                <div class="category-icon">🌍</div>
+                <h2>La Creación</h2>
+                <p class="category-desc">El origen de Eldoria y sus dioses</p>
+            </div>
+            <div class="content-grid">
+                <article class="content-card rarity-mythic">
+                    <div class="card-header">
+                        <span class="card-icon">✨</span>
+                        <div class="card-title">
+                            <h3>El Génesis</h3>
+                            <span class="rarity-tag">Mito Primordial</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-description">En el principio solo existía el Vacío. De la nada surgieron los Tres
+                            Primordiales: Solarius (Luz), Umbra (Oscuridad) y Gaia (Vida). Juntos crearon Eldoria como
+                            un experimento de equilibrio entre sus poderes.</p>
+                        <div class="card-abilities">
+                            <h4>Significado:</h4>
+                            <ul>
+                                <li>Explica el origen de las frutas mágicas (bendiciones de los dioses)</li>
+                                <li>Justifica el equilibrio entre bien y mal</li>
+                                <li>Revela la naturaleza del Rey Eterno</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="content-card rarity-legendary">
+                    <div class="card-header">
+                        <span class="card-icon">🌳</span>
+                        <div class="card-title">
+                            <h3>El Árbol del Mundo</h3>
+                            <span class="rarity-tag">Leyenda Sagrada</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-description">El primer ser creado por Gaia fue un árbol colosal cuyas raíces
+                            conectan todos los rincones de Eldoria. Se dice que la Arboleda Verdante es donde una de sus
+                            ramas toca el suelo.</p>
+                        <div class="card-abilities">
+                            <h4>Significado:</h4>
+                            <ul>
+                                <li>El Loto de Vida crece de sus hojas</li>
+                                <li>Los druidas son sus guardianes elegidos</li>
+                                <li>Su muerte significaría el fin del mundo</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- ERAS HISTÓRICAS -->
+        <section class="category-section">
+            <div class="category-header">
+                <div class="category-icon">📅</div>
+                <h2>Las Eras de Eldoria</h2>
+                <p class="category-desc">Los grandes períodos de la historia</p>
+            </div>
+            <div class="content-grid">
+                <article class="content-card rarity-epic">
+                    <div class="card-header">
+                        <span class="card-icon">⚔️</span>
+                        <div class="card-title">
+                            <h3>Era de los Dragones</h3>
+                            <span class="rarity-tag">Hace 10,000 años</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-description">Cuando los dragones gobernaban el mundo y los humanos eran esclavos.
+                            Terminó cuando el primer héroe, Aldric, forjó una alianza con los dioses y derrotó al Rey
+                            Dragón.</p>
+                        <div class="card-stats">
+                            <div class="stat"><span class="stat-label">Evento clave:</span> Muerte del Rey Dragón</div>
+                            <div class="stat"><span class="stat-label">Resultado:</span> Libertad de los mortales</div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="content-card rarity-rare">
+                    <div class="card-header">
+                        <span class="card-icon">🏰</span>
+                        <div class="card-title">
+                            <h3>Era de los Reinos</h3>
+                            <span class="rarity-tag">Hace 5,000 años</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-description">Tras la caída de los dragones, surgieron múltiples reinos humanos
+                            que lucharon entre sí por el poder. Un período de guerras constantes y héroes legendarios.
+                        </p>
+                        <div class="card-stats">
+                            <div class="stat"><span class="stat-label">Evento clave:</span> Guerra de los Cien Reinos
+                            </div>
+                            <div class="stat"><span class="stat-label">Resultado:</span> Fundación de Eldoria unificada
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="content-card rarity-legendary">
+                    <div class="card-header">
+                        <span class="card-icon">👑</span>
+                        <div class="card-title">
+                            <h3>Era del Rey Eterno</h3>
+                            <span class="rarity-tag">Hace 1,000 años - Presente</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-description">Aldric, bendecido con inmortalidad por los dioses, unificó todos los
+                            reinos bajo su gobierno. Mil años de relativa paz, aunque las sombras comienzan a agitarse
+                            nuevamente.</p>
+                        <div class="card-stats">
+                            <div class="stat"><span class="stat-label">Evento clave:</span> Coronación de Aldric</div>
+                            <div class="stat"><span class="stat-label">Resultado:</span> Era actual del juego</div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- PROFECÍAS -->
+        <section class="category-section">
+            <div class="category-header">
+                <div class="category-icon">🔮</div>
+                <h2>Profecías</h2>
+                <p class="category-desc">Predicciones sobre el futuro del reino</p>
+            </div>
+            <div class="content-grid">
+                <article class="content-card rarity-mythic">
+                    <div class="card-header">
+                        <span class="card-icon">🌑</span>
+                        <div class="card-title">
+                            <h3>La Profecía del Eclipse</h3>
+                            <span class="rarity-tag">Principal</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-description">"Cuando el Sol y la Luna se devoren mutuamente, el Hijo del Vacío
+                            despertará. Solo quien porte las siete frutas podrá detener la oscuridad eterna."</p>
+                        <div class="card-abilities">
+                            <h4>Interpretación:</h4>
+                            <ul>
+                                <li>El eclipse se refiere al despertar de Lord Malachar</li>
+                                <li>Las siete frutas son las mágicas originales</li>
+                                <li>El héroe profetizado eres TÚ</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="content-card rarity-legendary">
+                    <div class="card-header">
+                        <span class="card-icon">🐉</span>
+                        <div class="card-title">
+                            <h3>El Retorno de los Dragones</h3>
+                            <span class="rarity-tag">Secundaria</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-description">"Las escamas que duermen despertarán cuando el trono tiemble. Los
+                            hijos del fuego reclamarán lo que fue suyo."</p>
+                        <div class="card-abilities">
+                            <h4>Interpretación:</h4>
+                            <ul>
+                                <li>Los dragones ancestrales volverán a dominar</li>
+                                <li>Relacionado con las luchas de poder actuales</li>
+                                <li>Podría significar una nueva guerra</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="content-card rarity-epic">
+                    <div class="card-header">
+                        <span class="card-icon">⭐</span>
+                        <div class="card-title">
+                            <h3>La Fruta Perdida</h3>
+                            <span class="rarity-tag">Misteriosa</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-description">"Una octava fruta existe, oculta en el corazón del Vacío. Quien la
+                            encuentre tendrá el poder de reescribir la realidad misma."</p>
+                        <div class="card-abilities">
+                            <h4>Interpretación:</h4>
+                            <ul>
+                                <li>¿Es la Fruta del Vacío?</li>
+                                <li>Podría ser la clave para derrotar a Malachar</li>
+                                <li>O podría destruir todo...</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- LEYENDAS DE HÉROES -->
+        <section class="category-section">
+            <div class="category-header">
+                <div class="category-icon">⚔️</div>
+                <h2>Héroes Legendarios</h2>
+                <p class="category-desc">Los campeones que forjaron la historia</p>
+            </div>
+            <div class="content-grid">
+                <article class="content-card rarity-legendary">
+                    <div class="card-header">
+                        <span class="card-icon">🦁</span>
+                        <div class="card-title">
+                            <h3>Sir Galahad el Puro</h3>
+                            <span class="rarity-tag">Paladín Legendario</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-description">El caballero más noble de la historia. Derrotó solo a un ejército de
+                            demonios usando únicamente su fe y su espada bendita.</p>
+                        <div class="card-stats">
+                            <div class="stat"><span class="stat-label">Era:</span> Era de los Reinos</div>
+                            <div class="stat"><span class="stat-label">Hazaña:</span> Cerró el Portal Demoníaco</div>
+                            <div class="stat"><span class="stat-label">Legado:</span> Orden de la Espada</div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="content-card rarity-epic">
+                    <div class="card-header">
+                        <span class="card-icon">🧙‍♂️</span>
+                        <div class="card-title">
+                            <h3>Merlin el Archimago</h3>
+                            <span class="rarity-tag">Mago Supremo</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-description">Fundador del Círculo Arcano. Se dice que descubrió el secreto de la
+                            magia y lo compartió con la humanidad.</p>
+                        <div class="card-stats">
+                            <div class="stat"><span class="stat-label">Era:</span> Era de los Dragones</div>
+                            <div class="stat"><span class="stat-label">Hazaña:</span> Creó las Torres de la Luna</div>
+                            <div class="stat"><span class="stat-label">Legado:</span> Círculo Arcano</div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <svg class="footer-emblem" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="25" cy="25" r="23" stroke="#d4a84b" stroke-width="2" fill="none" />
+            <path d="M25 8L32 22L46 25L32 28L25 42L18 28L4 25L18 22L25 8Z" fill="#d4a84b" opacity="0.8" />
+        </svg>
+        <p>Los Archivos de Eldoria &copy; 2026</p>
+        <p style="margin-top: 10px; opacity: 0.6;">
+            <a href="../../index.html">Volver al Inicio</a>
+        </p>
+    </footer>
+
+    <script src="../../js/script.js"></script>
+</body>
+
+</html>

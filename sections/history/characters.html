@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personajes de Eldoria - Conoce a los héroes, villanos y NPCs del reino.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap"
+        rel="stylesheet">
+    <title>Personajes - Eldoria Wiki</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+
+<body>
+    <div class="particles" id="particles"></div>
+
+    <header>
+        <div class="logo-container">
+            <a href="../../index.html" class="home-link">
+                <svg class="crown-icon" viewBox="0 0 100 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="goldGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" stop-color="#f4d675" />
+                            <stop offset="50%" stop-color="#d4a84b" />
+                            <stop offset="100%" stop-color="#8b6914" />
+                        </linearGradient>
+                    </defs>
+                    <path d="M50 5L65 30L85 15L75 50H25L15 15L35 30L50 5Z" fill="url(#goldGrad)" stroke="#f4d675"
+                        stroke-width="2" />
+                    <rect x="20" y="50" width="60" height="15" rx="3" fill="url(#goldGrad)" stroke="#f4d675"
+                        stroke-width="2" />
+                    <circle cx="50" cy="25" r="5" fill="#8b1a1a" />
+                    <circle cx="30" cy="35" r="4" fill="#4a1a6b" />
+                    <circle cx="70" cy="35" r="4" fill="#1a4a2e" />
+                    <path d="M25 70H75" stroke="#d4a84b" stroke-width="3" stroke-linecap="round" />
+                </svg>
+            </a>
+        </div>
+        <h1>Personajes y NPCs</h1>
+        <p class="subtitle">Los Habitantes del Reino</p>
+        <div class="divider">
+            <div class="divider-line"></div>
+            <div class="divider-gem"></div>
+            <div class="divider-line"></div>
+        </div>
+    </header>
+
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <div class="sidebar-logo">
+                <svg class="crown-icon" viewBox="0 0 100 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="sidebarGoldGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" stop-color="#f4d675" />
+                            <stop offset="50%" stop-color="#d4a84b" />
+                            <stop offset="100%" stop-color="#8b6914" />
+                        </linearGradient>
+                    </defs>
+                    <path d="M50 5L65 30L85 15L75 50H25L15 15L35 30L50 5Z" fill="url(#sidebarGoldGrad)" stroke="#f4d675"
+                        stroke-width="2" />
+                    <rect x="20" y="50" width="60" height="15" rx="3" fill="url(#sidebarGoldGrad)" stroke="#f4d675"
+                        stroke-width="2" />
+                </svg>
+            </div>
+            <div class="sidebar-title">Eldoria Wiki</div>
+        </div>
+        <ul class="sidebar-menu">
+            <li class="sidebar-item">
+                <a href="../../index.html" class="sidebar-link">
+                    <span class="sidebar-icon">🏠</span>
+                    <span>Inicio</span>
+                </a>
+            </li>
+
+            <li class="sidebar-section-header">Objetos</li>
+            <li class="sidebar-item">
+                <a href="../items/fruits.html" class="sidebar-link sidebar-link-sub">
+                    <span class="sidebar-icon">🍎</span>
+                    <span>Frutas</span>
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a href="../items/equipment.html" class="sidebar-link sidebar-link-sub">
+                    <span class="sidebar-icon">⚔️</span>
+                    <span>Equipo</span>
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a href="../items/rewards.html" class="sidebar-link sidebar-link-sub">
+                    <span class="sidebar-icon">🏆</span>
+                    <span>Premios</span>
+                </a>
+            </li>
+
+            <li class="sidebar-section-header">Mapa</li>
+            <li class="sidebar-item">
+                <a href="../map/cities.html" class="sidebar-link sidebar-link-sub">
+                    <span class="sidebar-icon">🏰</span>
+                    <span>Ciudades</span>
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a href="../map/dungeons.html" class="sidebar-link sidebar-link-sub">
+                    <span class="sidebar-icon">⛓️</span>
+                    <span>Mazmorras</span>
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a href="../map/bossarenas.html" class="sidebar-link sidebar-link-sub">
+                    <span class="sidebar-icon">👹</span>
+                    <span>Jefes</span>
+                </a>
+            </li>
+
+            <li class="sidebar-section-header">Historia</li>
+            <li class="sidebar-item">
+                <a href="characters.html" class="sidebar-link sidebar-link-sub active">
+                    <span class="sidebar-icon">👥</span>
+                    <span>Personajes</span>
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a href="lore.html" class="sidebar-link sidebar-link-sub">
+                    <span class="sidebar-icon">📜</span>
+                    <span>Lore</span>
+                </a>
+            </li>
+        </ul>
+        <div class="sidebar-footer">
+            <p>Eldoria &copy; 2026</p>
+        </div>
+    </aside>
+
+    <main>
+        <section class="welcome">
+            <h2>Almas de Eldoria</h2>
+            <p>Desde el Rey Eterno hasta el más humilde mercader, cada habitante de Eldoria tiene una historia que
+                contar. Gánate su confianza y desbloquea oportunidades únicas.</p>
+        </section>
+
+        <!-- FIGURAS DE PODER -->
+        <section class="category-section">
+            <div class="category-header">
+                <div class="category-icon">👑</div>
+                <h2>Figuras de Poder</h2>
+                <p class="category-desc">Los líderes y gobernantes del reino</p>
+            </div>
+            <div class="content-grid">
+                <article class="content-card rarity-mythic">
+                    <div class="card-header">
+                        <span class="card-icon">👑</span>
+                        <div class="card-title">
+                            <h3>Rey Aldric el Eterno</h3>
+                            <span class="rarity-tag">Monarca</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-description">El inmortal gobernante de Eldoria. Ha reinado por mil años gracias a
+                            la bendición de los dioses. Sabio y justo, pero misterioso.</p>
+                        <div class="card-stats">
+                            <div class="stat"><span class="stat-label">Ubicación:</span> Ciudad Estelar - Palacio</div>
+                            <div class="stat"><span class="stat-label">Facción:</span> Corona Real</div>
+                            <div class="stat"><span class="stat-label">Misiones:</span> Historia principal</div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="content-card rarity-legendary">
+                    <div class="card-header">
+                        <span class="card-icon">⚔️</span>
+                        <div class="card-title">
+                            <h3>General Varian Espada de Hierro</h3>
+                            <span class="rarity-tag">Militar</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-description">Comandante supremo de los ejércitos reales. Veterano de cien
+                            batallas. Su lealtad al rey es inquebrantable.</p>
+                        <div class="card-stats">
+                            <div class="stat"><span class="stat-label">Ubicación:</span> Fortaleza de Hierro</div>
+                            <div class="stat"><span class="stat-label">Facción:</span> Orden de la Espada</div>
+                            <div class="stat"><span class="stat-label">Misiones:</span> Guerrero</div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="content-card rarity-legendary">
+                    <div class="card-header">
+                        <span class="card-icon">🔮</span>
+                        <div class="card-title">
+                            <h3>Archimaga Seraphina</h3>
+                            <span class="rarity-tag">Maga</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-description">Líder del Círculo Arcano. La hechicera más poderosa de la era
+                            actual. Sus profecías siempre se cumplen.</p>
+                        <div class="card-stats">
+                            <div class="stat"><span class="stat-label">Ubicación:</span> Torres de la Luna</div>
+                            <div class="stat"><span class="stat-label">Facción:</span> Círculo Arcano</div>
+                            <div class="stat"><span class="stat-label">Misiones:</span> Mago</div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- MERCADERES -->
+        <section class="category-section">
+            <div class="category-header">
+                <div class="category-icon">🛒</div>
+                <h2>Mercaderes</h2>
+                <p class="category-desc">Los comerciantes que abastecen a los aventureros</p>
+            </div>
+            <div class="content-grid">
+                <article class="content-card rarity-rare">
+                    <div class="card-header">
+                        <span class="card-icon">🧔</span>
+                        <div class="card-title">
+                            <h3>Gareth el Herrero</h3>
+                            <span class="rarity-tag">Artesano</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-description">El mejor herrero de Ciudad Estelar. Puede forjar cualquier arma si
+                            le traes los materiales adecuados.</p>
+                        <div class="card-stats">
+                            <div class="stat"><span class="stat-label">Ubicación:</span> Ciudad Estelar - Mercado</div>
+                            <div class="stat"><span class="stat-label">Servicio:</span> Forja de armas</div>
+                            <div class="stat"><span class="stat-label">Especialidad:</span> Armas legendarias</div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="content-card rarity-epic">
+                    <div class="card-header">
+                        <span class="card-icon">🧙‍♀️</span>
+                        <div class="card-title">
+                            <h3>Morgana la Alquimista</h3>
+                            <span class="rarity-tag">Alquimista</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-description">Maestra de pociones y elixires. Sus preparaciones son las más
+                            potentes del reino, aunque también las más caras.</p>
+                        <div class="card-stats">
+                            <div class="stat"><span class="stat-label">Ubicación:</span> Torres de la Luna</div>
+                            <div class="stat"><span class="stat-label">Servicio:</span> Pociones y venenos</div>
+                            <div class="stat"><span class="stat-label">Especialidad:</span> Elixires raros</div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="content-card rarity-legendary">
+                    <div class="card-header">
+                        <span class="card-icon">👤</span>
+                        <div class="card-title">
+                            <h3>El Mercader Misterioso</h3>
+                            <span class="rarity-tag">Desconocido</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-description">Aparece en lugares aleatorios. Vende objetos únicos que no se
+                            encuentran en ningún otro lugar. Nadie conoce su verdadero nombre.</p>
+                        <div class="card-stats">
+                            <div class="stat"><span class="stat-label">Ubicación:</span> Aleatorio</div>
+                            <div class="stat"><span class="stat-label">Servicio:</span> Objetos únicos</div>
+                            <div class="stat"><span class="stat-label">Especialidad:</span> Artículos míticos</div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- DADORES DE MISIONES -->
+        <section class="category-section">
+            <div class="category-header">
+                <div class="category-icon">📜</div>
+                <h2>Dadores de Misiones</h2>
+                <p class="category-desc">NPCs que ofrecen aventuras y recompensas</p>
+            </div>
+            <div class="content-grid">
+                <article class="content-card rarity-common">
+                    <div class="card-header">
+                        <span class="card-icon">👴</span>
+                        <div class="card-title">
+                            <h3>El Viejo Sabio</h3>
+                            <span class="rarity-tag">Tutorial</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-description">Primer NPC que encuentras en el juego. Te guía en tus primeros pasos
+                            como aventurero.</p>
+                        <div class="card-stats">
+                            <div class="stat"><span class="stat-label">Ubicación:</span> Aldea del Roble</div>
+                            <div class="stat"><span class="stat-label">Misiones:</span> Tutorial (5)</div>
+                            <div class="stat"><span class="stat-label">Recompensa:</span> Equipo inicial</div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="content-card rarity-rare">
+                    <div class="card-header">
+                        <span class="card-icon">🏴‍☠️</span>
+                        <div class="card-title">
+                            <h3>Capitán Barbanegra</h3>
+                            <span class="rarity-tag">Pirata</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-description">Legendario pirata que busca tripulación para sus aventuras en alta
+                            mar. Paga bien pero las misiones son peligrosas.</p>
+                        <div class="card-stats">
+                            <div class="stat"><span class="stat-label">Ubicación:</span> Puerto Esmeralda</div>
+                            <div class="stat"><span class="stat-label">Misiones:</span> Navegación (20+)</div>
+                            <div class="stat"><span class="stat-label">Recompensa:</span> Tesoros marinos</div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="content-card rarity-epic">
+                    <div class="card-header">
+                        <span class="card-icon">🌿</span>
+                        <div class="card-title">
+                            <h3>Druida Oakheart</h3>
+                            <span class="rarity-tag">Naturaleza</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-description">Guardián de la Arboleda Verdante. Ofrece misiones para proteger la
+                            naturaleza de las fuerzas oscuras.</p>
+                        <div class="card-stats">
+                            <div class="stat"><span class="stat-label">Ubicación:</span> Arboleda Verdante</div>
+                            <div class="stat"><span class="stat-label">Misiones:</span> Druida (15+)</div>
+                            <div class="stat"><span class="stat-label">Recompensa:</span> Loto de Vida</div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- VILLANOS -->
+        <section class="category-section">
+            <div class="category-header">
+                <div class="category-icon">💀</div>
+                <h2>Villanos</h2>
+                <p class="category-desc">Los antagonistas que amenazan el reino</p>
+            </div>
+            <div class="content-grid">
+                <article class="content-card rarity-legendary">
+                    <div class="card-header">
+                        <span class="card-icon">🖤</span>
+                        <div class="card-title">
+                            <h3>Lord Malachar</h3>
+                            <span class="rarity-tag">Señor Oscuro</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-description">El villano principal de la historia. Un antiguo héroe corrompido por
+                            el poder del Vacío. Busca conquistar Eldoria.</p>
+                        <div class="card-stats">
+                            <div class="stat"><span class="stat-label">Ubicación:</span> Ciudadela Sombría</div>
+                            <div class="stat"><span class="stat-label">Rol:</span> Antagonista principal</div>
+                            <div class="stat"><span class="stat-label">Amenaza:</span> Extinción del reino</div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="content-card rarity-epic">
+                    <div class="card-header">
+                        <span class="card-icon">🦇</span>
+                        <div class="card-title">
+                            <h3>Condesa Sangrienta</h3>
+                            <span class="rarity-tag">Vampiro</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-description">Antigua noble convertida en vampira. Controla un culto secreto que
+                            opera en las sombras de Ciudad Estelar.</p>
+                        <div class="card-stats">
+                            <div class="stat"><span class="stat-label">Ubicación:</span> Mansión Nocturna</div>
+                            <div class="stat"><span class="stat-label">Rol:</span> Antagonista secundario</div>
+                            <div class="stat"><span class="stat-label">Amenaza:</span> Corrupción política</div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <svg class="footer-emblem" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="25" cy="25" r="23" stroke="#d4a84b" stroke-width="2" fill="none" />
+            <path d="M25 8L32 22L46 25L32 28L25 42L18 28L4 25L18 22L25 8Z" fill="#d4a84b" opacity="0.8" />
+        </svg>
+        <p>Los Archivos de Eldoria &copy; 2026</p>
+        <p style="margin-top: 10px; opacity: 0.6;">
+            <a href="../../index.html">Volver al Inicio</a>
+        </p>
+    </footer>
+
+    <script src="../../js/script.js"></script>
+</body>
+
+</html>

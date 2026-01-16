@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Frutas Mágicas de Eldoria - Descubre todas las frutas encantadas y sus poderes únicos.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap"
+        rel="stylesheet">
+    <title>Frutas Mágicas - Eldoria Wiki</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+
+<body>
+    <div class="particles" id="particles"></div>
+
+    <header>
+        <div class="logo-container">
+            <a href="../../index.html" class="home-link">
+                <svg class="crown-icon" viewBox="0 0 100 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="goldGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" stop-color="#f4d675" />
+                            <stop offset="50%" stop-color="#d4a84b" />
+                            <stop offset="100%" stop-color="#8b6914" />
+                        </linearGradient>
+                    </defs>
+                    <path d="M50 5L65 30L85 15L75 50H25L15 15L35 30L50 5Z" fill="url(#goldGrad)" stroke="#f4d675"
+                        stroke-width="2" />
+                    <rect x="20" y="50" width="60" height="15" rx="3" fill="url(#goldGrad)" stroke="#f4d675"
+                        stroke-width="2" />
+                    <circle cx="50" cy="25" r="5" fill="#8b1a1a" />
+                    <circle cx="30" cy="35" r="4" fill="#4a1a6b" />
+                    <circle cx="70" cy="35" r="4" fill="#1a4a2e" />
+                    <path d="M25 70H75" stroke="#d4a84b" stroke-width="3" stroke-linecap="round" />
+                </svg>
+            </a>
+        </div>
+        <h1>Frutas Mágicas</h1>
+        <p class="subtitle">Los Frutos Encantados de Eldoria</p>
+        <div class="divider">
+            <div class="divider-line"></div>
+            <div class="divider-gem"></div>
+            <div class="divider-line"></div>
+        </div>
+    </header>
+
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <div class="sidebar-logo">
+                <svg class="crown-icon" viewBox="0 0 100 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="sidebarGoldGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" stop-color="#f4d675" />
+                            <stop offset="50%" stop-color="#d4a84b" />
+                            <stop offset="100%" stop-color="#8b6914" />
+                        </linearGradient>
+                    </defs>
+                    <path d="M50 5L65 30L85 15L75 50H25L15 15L35 30L50 5Z" fill="url(#sidebarGoldGrad)" stroke="#f4d675"
+                        stroke-width="2" />
+                    <rect x="20" y="50" width="60" height="15" rx="3" fill="url(#sidebarGoldGrad)" stroke="#f4d675"
+                        stroke-width="2" />
+                </svg>
+            </div>
+            <div class="sidebar-title">Eldoria Wiki</div>
+        </div>
+        <ul class="sidebar-menu">
+            <li class="sidebar-item">
+                <a href="../../index.html" class="sidebar-link">
+                    <span class="sidebar-icon">🏠</span>
+                    <span>Inicio</span>
+                </a>
+            </li>
+
+            <li class="sidebar-section-header">Objetos</li>
+            <li class="sidebar-item">
+                <a href="fruits.html" class="sidebar-link sidebar-link-sub active">
+                    <span class="sidebar-icon">🍎</span>
+                    <span>Frutas</span>
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a href="equipment.html" class="sidebar-link sidebar-link-sub">
+                    <span class="sidebar-icon">⚔️</span>
+                    <span>Equipo</span>
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a href="rewards.html" class="sidebar-link sidebar-link-sub">
+                    <span class="sidebar-icon">🏆</span>
+                    <span>Premios</span>
+                </a>
+            </li>
+
+            <li class="sidebar-section-header">Mapa</li>
+            <li class="sidebar-item">
+                <a href="../map/cities.html" class="sidebar-link sidebar-link-sub">
+                    <span class="sidebar-icon">🏰</span>
+                    <span>Ciudades</span>
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a href="../map/dungeons.html" class="sidebar-link sidebar-link-sub">
+                    <span class="sidebar-icon">⛓️</span>
+                    <span>Mazmorras</span>
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a href="../map/bossarenas.html" class="sidebar-link sidebar-link-sub">
+                    <span class="sidebar-icon">👹</span>
+                    <span>Jefes</span>
+                </a>
+            </li>
+
+            <li class="sidebar-section-header">Historia</li>
+            <li class="sidebar-item">
+                <a href="../history/characters.html" class="sidebar-link sidebar-link-sub">
+                    <span class="sidebar-icon">👥</span>
+                    <span>Personajes</span>
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a href="../history/lore.html" class="sidebar-link sidebar-link-sub">
+                    <span class="sidebar-icon">📜</span>
+                    <span>Lore</span>
+                </a>
+            </li>
+        </ul>
+        <div class="sidebar-footer">
+            <p>Eldoria &copy; 2026</p>
+        </div>
+    </aside>
+
+    <main>
+        <section class="welcome">
+            <h2>Frutos del Poder</h2>
+            <p>Las Frutas Mágicas de Eldoria son tesoros legendarios que otorgan habilidades extraordinarias a quienes
+                las consumen. Cada fruta posee propiedades únicas vinculadas a los elementos primordiales del mundo. Se
+                dice que los dioses antiguos plantaron estos árboles sagrados para bendecir a los mortales dignos.</p>
+        </section>
+
+        <section class="content-grid">
+            <article class="content-card rarity-legendary">
+                <div class="card-header">
+                    <span class="card-icon">🔥</span>
+                    <div class="card-title">
+                        <h3>Baya de Brasas</h3>
+                        <span class="rarity-tag">Legendaria</span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <p class="card-description">Otorga dominio absoluto sobre la magia de fuego. El portador puede
+                        invocar llamas destructoras y es inmune al calor extremo.</p>
+                    <div class="card-stats">
+                        <div class="stat"><span class="stat-label">Elemento:</span> Fuego</div>
+                        <div class="stat"><span class="stat-label">Ubicación:</span> Monte Pyrrhus</div>
+                        <div class="stat"><span class="stat-label">Rareza:</span> Extremadamente Rara</div>
+                    </div>
+                    <div class="card-abilities">
+                        <h4>Habilidades:</h4>
+                        <ul>
+                            <li>Bola de Fuego - Proyectil explosivo</li>
+                            <li>Escudo Ígneo - Barrera protectora</li>
+                            <li>Forma Fénix - Transformación temporal</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <article class="content-card rarity-legendary">
+                <div class="card-header">
+                    <span class="card-icon">❄️</span>
+                    <div class="card-title">
+                        <h3>Manzana de Escarcha</h3>
+                        <span class="rarity-tag">Legendaria</span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <p class="card-description">Concede poderes de criomancia y resistencia total al frío. El usuario
+                        puede congelar todo a su alrededor.</p>
+                    <div class="card-stats">
+                        <div class="stat"><span class="stat-label">Elemento:</span> Hielo</div>
+                        <div class="stat"><span class="stat-label">Ubicación:</span> Picos del Invierno Eterno</div>
+                        <div class="stat"><span class="stat-label">Rareza:</span> Extremadamente Rara</div>
+                    </div>
+                    <div class="card-abilities">
+                        <h4>Habilidades:</h4>
+                        <ul>
+                            <li>Rayo Gélido - Congela enemigos</li>
+                            <li>Tormenta de Hielo - Área de efecto</li>
+                            <li>Armadura de Escarcha - Defensa aumentada</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <article class="content-card rarity-legendary">
+                <div class="card-header">
+                    <span class="card-icon">⚡</span>
+                    <div class="card-title">
+                        <h3>Uva de la Tormenta</h3>
+                        <span class="rarity-tag">Legendaria</span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <p class="card-description">Permite canalizar rayos a través del cuerpo. Otorga velocidad
+                        sobrehumana y control sobre la electricidad.</p>
+                    <div class="card-stats">
+                        <div class="stat"><span class="stat-label">Elemento:</span> Rayo</div>
+                        <div class="stat"><span class="stat-label">Ubicación:</span> Temporada de Tempestades</div>
+                        <div class="stat"><span class="stat-label">Rareza:</span> Muy Rara</div>
+                    </div>
+                    <div class="card-abilities">
+                        <h4>Habilidades:</h4>
+                        <ul>
+                            <li>Relámpago - Ataque instantáneo</li>
+                            <li>Velocidad del Rayo - Movimiento rápido</li>
+                            <li>Sobrecarga - Daño masivo en área</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <article class="content-card rarity-epic">
+                <div class="card-header">
+                    <span class="card-icon">🌿</span>
+                    <div class="card-title">
+                        <h3>Loto de Vida</h3>
+                        <span class="rarity-tag">Épica</span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <p class="card-description">Otorga poderosas habilidades de curación. Sagrado para los Druidas de la
+                        Arboleda Verdante.</p>
+                    <div class="card-stats">
+                        <div class="stat"><span class="stat-label">Elemento:</span> Naturaleza</div>
+                        <div class="stat"><span class="stat-label">Ubicación:</span> Arboleda Verdante</div>
+                        <div class="stat"><span class="stat-label">Rareza:</span> Rara</div>
+                    </div>
+                    <div class="card-abilities">
+                        <h4>Habilidades:</h4>
+                        <ul>
+                            <li>Curación Mayor - Restaura vida</li>
+                            <li>Regeneración - Sanación continua</li>
+                            <li>Resurrección - Revive aliados caídos</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <article class="content-card rarity-legendary">
+                <div class="card-header">
+                    <span class="card-icon">👻</span>
+                    <div class="card-title">
+                        <h3>Ciruela Fantasma</h3>
+                        <span class="rarity-tag">Legendaria</span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <p class="card-description">Permite atravesar materia sólida y volverse invisible. Solo florece bajo
+                        la luna de sangre.</p>
+                    <div class="card-stats">
+                        <div class="stat"><span class="stat-label">Elemento:</span> Espectral</div>
+                        <div class="stat"><span class="stat-label">Ubicación:</span> Cementerio Ancestral</div>
+                        <div class="stat"><span class="stat-label">Rareza:</span> Extremadamente Rara</div>
+                    </div>
+                    <div class="card-abilities">
+                        <h4>Habilidades:</h4>
+                        <ul>
+                            <li>Intangibilidad - Atravesar paredes</li>
+                            <li>Invisibilidad - Ocultarse completamente</li>
+                            <li>Posesión - Control temporal de NPCs</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <article class="content-card rarity-mythic">
+                <div class="card-header">
+                    <span class="card-icon">🌟</span>
+                    <div class="card-title">
+                        <h3>Carambola Celestial</h3>
+                        <span class="rarity-tag">Mítica</span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <p class="card-description">Otorga vuelo y proyección astral. La fruta más rara de todo Eldoria,
+                        bendecida por los dioses celestiales.</p>
+                    <div class="card-stats">
+                        <div class="stat"><span class="stat-label">Elemento:</span> Celestial</div>
+                        <div class="stat"><span class="stat-label">Ubicación:</span> Jardines del Cielo</div>
+                        <div class="stat"><span class="stat-label">Rareza:</span> Única</div>
+                    </div>
+                    <div class="card-abilities">
+                        <h4>Habilidades:</h4>
+                        <ul>
+                            <li>Vuelo - Libertad en el cielo</li>
+                            <li>Proyección Astral - Viaje espiritual</li>
+                            <li>Bendición Divina - Poder aumentado</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <article class="content-card rarity-rare">
+                <div class="card-header">
+                    <span class="card-icon">🌊</span>
+                    <div class="card-title">
+                        <h3>Perla Marina</h3>
+                        <span class="rarity-tag">Rara</span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <p class="card-description">Control sobre el agua y capacidad de respirar bajo el mar. Popular entre
+                        los piratas de Eldoria.</p>
+                    <div class="card-stats">
+                        <div class="stat"><span class="stat-label">Elemento:</span> Agua</div>
+                        <div class="stat"><span class="stat-label">Ubicación:</span> Abismo Profundo</div>
+                        <div class="stat"><span class="stat-label">Rareza:</span> Rara</div>
+                    </div>
+                    <div class="card-abilities">
+                        <h4>Habilidades:</h4>
+                        <ul>
+                            <li>Respiración Acuática - Explorar océanos</li>
+                            <li>Oleaje - Ataque de agua</li>
+                            <li>Forma Acuática - Transformación</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <article class="content-card rarity-epic">
+                <div class="card-header">
+                    <span class="card-icon">🌑</span>
+                    <div class="card-title">
+                        <h3>Fruta del Vacío</h3>
+                        <span class="rarity-tag">Épica</span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <p class="card-description">Poderes misteriosos de la oscuridad primordial. Recientemente
+                        descubierta, sus efectos completos son desconocidos.</p>
+                    <div class="card-stats">
+                        <div class="stat"><span class="stat-label">Elemento:</span> Vacío</div>
+                        <div class="stat"><span class="stat-label">Ubicación:</span> Desconocida</div>
+                        <div class="stat"><span class="stat-label">Rareza:</span> Muy Rara</div>
+                    </div>
+                    <div class="card-abilities">
+                        <h4>Habilidades:</h4>
+                        <ul>
+                            <li>??? - Por descubrir</li>
+                            <li>??? - Por descubrir</li>
+                            <li>??? - Por descubrir</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <svg class="footer-emblem" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="25" cy="25" r="23" stroke="#d4a84b" stroke-width="2" fill="none" />
+            <path d="M25 8L32 22L46 25L32 28L25 42L18 28L4 25L18 22L25 8Z" fill="#d4a84b" opacity="0.8" />
+        </svg>
+        <p>Los Archivos de Eldoria &copy; 2026</p>
+        <p style="margin-top: 10px; opacity: 0.6;">
+            <a href="../../index.html">Volver al Inicio</a>
+        </p>
+    </footer>
+
+    <script src="../../js/script.js"></script>
+</body>
+
+</html>

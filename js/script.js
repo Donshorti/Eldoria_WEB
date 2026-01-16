@@ -41,7 +41,7 @@ function initParticles() {
  * Enables smooth scrolling for navigation anchor links
  */
 function initSmoothScroll() {
-    document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+    document.querySelectorAll('.sidebar-link[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
             const targetId = this.getAttribute('href');

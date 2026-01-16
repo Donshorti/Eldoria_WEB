@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Recompensas de Eldoria - Tesoros, logros y premios para aventureros.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap"
+        rel="stylesheet">
+    <title>Recompensas - Eldoria Wiki</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+
+<body>
+    <div class="particles" id="particles"></div>
+
+    <header>
+        <div class="logo-container">
+            <a href="../../index.html" class="home-link">
+                <svg class="crown-icon" viewBox="0 0 100 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="goldGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" stop-color="#f4d675" />
+                            <stop offset="50%" stop-color="#d4a84b" />
+                            <stop offset="100%" stop-color="#8b6914" />
+                        </linearGradient>
+                    </defs>
+                    <path d="M50 5L65 30L85 15L75 50H25L15 15L35 30L50 5Z" fill="url(#goldGrad)" stroke="#f4d675"
+                        stroke-width="2" />
+                    <rect x="20" y="50" width="60" height="15" rx="3" fill="url(#goldGrad)" stroke="#f4d675"
+                        stroke-width="2" />
+                    <circle cx="50" cy="25" r="5" fill="#8b1a1a" />
+                    <circle cx="30" cy="35" r="4" fill="#4a1a6b" />
+                    <circle cx="70" cy="35" r="4" fill="#1a4a2e" />
+                    <path d="M25 70H75" stroke="#d4a84b" stroke-width="3" stroke-linecap="round" />
+                </svg>
+            </a>
+        </div>
+        <h1>Recompensas</h1>
+        <p class="subtitle">Tesoros y Premios del Reino</p>
+        <div class="divider">
+            <div class="divider-line"></div>
+            <div class="divider-gem"></div>
+            <div class="divider-line"></div>
+        </div>
+    </header>
+
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <div class="sidebar-logo">
+                <svg class="crown-icon" viewBox="0 0 100 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="sidebarGoldGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" stop-color="#f4d675" />
+                            <stop offset="50%" stop-color="#d4a84b" />
+                            <stop offset="100%" stop-color="#8b6914" />
+                        </linearGradient>
+                    </defs>
+                    <path d="M50 5L65 30L85 15L75 50H25L15 15L35 30L50 5Z" fill="url(#sidebarGoldGrad)" stroke="#f4d675"
+                        stroke-width="2" />
+                    <rect x="20" y="50" width="60" height="15" rx="3" fill="url(#sidebarGoldGrad)" stroke="#f4d675"
+                        stroke-width="2" />
+                </svg>
+            </div>
+            <div class="sidebar-title">Eldoria Wiki</div>
+        </div>
+        <ul class="sidebar-menu">
+            <li class="sidebar-item">
+                <a href="../../index.html" class="sidebar-link">
+                    <span class="sidebar-icon">🏠</span>
+                    <span>Inicio</span>
+                </a>
+            </li>
+
+            <li class="sidebar-section-header">Objetos</li>
+            <li class="sidebar-item">
+                <a href="fruits.html" class="sidebar-link sidebar-link-sub">
+                    <span class="sidebar-icon">🍎</span>
+                    <span>Frutas</span>
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a href="equipment.html" class="sidebar-link sidebar-link-sub">
+                    <span class="sidebar-icon">⚔️</span>
+                    <span>Equipo</span>
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a href="rewards.html" class="sidebar-link sidebar-link-sub active">
+                    <span class="sidebar-icon">🏆</span>
+                    <span>Premios</span>
+                </a>
+            </li>
+
+            <li class="sidebar-section-header">Mapa</li>
+            <li class="sidebar-item">
+                <a href="../map/cities.html" class="sidebar-link sidebar-link-sub">
+                    <span class="sidebar-icon">🏰</span>
+                    <span>Ciudades</span>
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a href="../map/dungeons.html" class="sidebar-link sidebar-link-sub">
+                    <span class="sidebar-icon">⛓️</span>
+                    <span>Mazmorras</span>
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a href="../map/bossarenas.html" class="sidebar-link sidebar-link-sub">
+                    <span class="sidebar-icon">👹</span>
+                    <span>Jefes</span>
+                </a>
+            </li>
+
+            <li class="sidebar-section-header">Historia</li>
+            <li class="sidebar-item">
+                <a href="../history/characters.html" class="sidebar-link sidebar-link-sub">
+                    <span class="sidebar-icon">👥</span>
+                    <span>Personajes</span>
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a href="../history/lore.html" class="sidebar-link sidebar-link-sub">
+                    <span class="sidebar-icon">📜</span>
+                    <span>Lore</span>
+                </a>
+            </li>
+        </ul>
+        <div class="sidebar-footer">
+            <p>Eldoria &copy; 2026</p>
+        </div>
+    </aside>
+
+    <main>
+        <section class="welcome">
+            <h2>Tesoros del Aventurero</h2>
+            <p>Las recompensas de Eldoria vienen en muchas formas: monedas de oro, gemas preciosas, cofres misteriosos y
+                títulos honoríficos. Los aventureros más dedicados acumulan riquezas que superan a las de los reyes.</p>
+        </section>
+
+        <!-- MONEDAS Y DIVISAS -->
+        <section class="category-section">
+            <div class="category-header">
+                <div class="category-icon">💰</div>
+                <h2>Monedas y Divisas</h2>
+                <p class="category-desc">Las diferentes formas de riqueza en Eldoria</p>
+            </div>
+            <div class="content-grid">
+                <article class="content-card rarity-common">
+                    <div class="card-header">
+                        <span class="card-icon">🪙</span>
+                        <div class="card-title">
+                            <h3>Monedas de Oro</h3>
+                            <span class="rarity-tag">Común</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-description">La moneda estándar del reino. Se obtiene derrotando enemigos y
+                            completando misiones.</p>
+                        <div class="card-stats">
+                            <div class="stat"><span class="stat-label">Uso:</span> Comercio general</div>
+                            <div class="stat"><span class="stat-label">Obtención:</span> Enemigos, misiones</div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="content-card rarity-rare">
+                    <div class="card-header">
+                        <span class="card-icon">💎</span>
+                        <div class="card-title">
+                            <h3>Gemas Celestiales</h3>
+                            <span class="rarity-tag">Rara</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-description">Moneda premium usada para mejoras especiales y objetos exclusivos.
+                        </p>
+                        <div class="card-stats">
+                            <div class="stat"><span class="stat-label">Uso:</span> Tienda premium</div>
+                            <div class="stat"><span class="stat-label">Obtención:</span> Eventos, logros</div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="content-card rarity-epic">
+                    <div class="card-header">
+                        <span class="card-icon">🌟</span>
+                        <div class="card-title">
+                            <h3>Estrellas de Honor</h3>
+                            <span class="rarity-tag">Épica</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-description">Moneda de gremio obtenida por contribuir a tu facción.</p>
+                        <div class="card-stats">
+                            <div class="stat"><span class="stat-label">Uso:</span> Tienda de gremio</div>
+                            <div class="stat"><span class="stat-label">Obtención:</span> Guerras de gremios</div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- COFRES -->
+        <section class="category-section">
+            <div class="category-header">
+                <div class="category-icon">📦</div>
+                <h2>Cofres y Cajas</h2>
+                <p class="category-desc">Contenedores de tesoros aleatorios</p>
+            </div>
+            <div class="content-grid">
+                <article class="content-card rarity-common">
+                    <div class="card-header">
+                        <span class="card-icon">🗃️</span>
+                        <div class="card-title">
+                            <h3>Cofre de Madera</h3>
+                            <span class="rarity-tag">Común</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-description">Cofre básico con recompensas modestas. Puede contener materiales y
+                            pociones.</p>
+                        <div class="card-stats">
+                            <div class="stat"><span class="stat-label">Contenido:</span> 1-3 objetos comunes</div>
+                            <div class="stat"><span class="stat-label">Oro:</span> 50-150</div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="content-card rarity-rare">
+                    <div class="card-header">
+                        <span class="card-icon">🎁</span>
+                        <div class="card-title">
+                            <h3>Cofre de Hierro</h3>
+                            <span class="rarity-tag">Raro</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-description">Cofre reforzado con mejores recompensas. Garantiza al menos un
+                            objeto raro.</p>
+                        <div class="card-stats">
+                            <div class="stat"><span class="stat-label">Contenido:</span> 2-5 objetos</div>
+                            <div class="stat"><span class="stat-label">Oro:</span> 200-500</div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="content-card rarity-epic">
+                    <div class="card-header">
+                        <span class="card-icon">✨</span>
+                        <div class="card-title">
+                            <h3>Cofre de Mithril</h3>
+                            <span class="rarity-tag">Épico</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-description">Cofre mágico que garantiza equipo épico y materiales raros.</p>
+                        <div class="card-stats">
+                            <div class="stat"><span class="stat-label">Contenido:</span> 3-7 objetos épicos</div>
+                            <div class="stat"><span class="stat-label">Oro:</span> 500-1500</div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="content-card rarity-legendary">
+                    <div class="card-header">
+                        <span class="card-icon">👑</span>
+                        <div class="card-title">
+                            <h3>Cofre del Dragón</h3>
+                            <span class="rarity-tag">Legendario</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-description">El cofre más valioso de Eldoria. Solo se obtiene derrotando jefes de
+                            mundo.</p>
+                        <div class="card-stats">
+                            <div class="stat"><span class="stat-label">Contenido:</span> 5-10 objetos legendarios</div>
+                            <div class="stat"><span class="stat-label">Oro:</span> 2000-5000</div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- LOGROS -->
+        <section class="category-section">
+            <div class="category-header">
+                <div class="category-icon">🏆</div>
+                <h2>Logros y Títulos</h2>
+                <p class="category-desc">Reconocimientos por hazañas heroicas</p>
+            </div>
+            <div class="content-grid">
+                <article class="content-card rarity-legendary">
+                    <div class="card-header">
+                        <span class="card-icon">⚔️</span>
+                        <div class="card-title">
+                            <h3>Matadragones</h3>
+                            <span class="rarity-tag">Título Legendario</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-description">Otorgado a quien derrote a los cinco dragones ancestrales de
+                            Eldoria.</p>
+                        <div class="card-stats">
+                            <div class="stat"><span class="stat-label">Requisito:</span> 5 dragones derrotados</div>
+                            <div class="stat"><span class="stat-label">Bonus:</span> +15% daño a dragones</div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="content-card rarity-epic">
+                    <div class="card-header">
+                        <span class="card-icon">🗺️</span>
+                        <div class="card-title">
+                            <h3>Explorador del Mundo</h3>
+                            <span class="rarity-tag">Título Épico</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-description">Para quienes han descubierto todos los rincones del mapa de Eldoria.
+                        </p>
+                        <div class="card-stats">
+                            <div class="stat"><span class="stat-label">Requisito:</span> 100% mapa explorado</div>
+                            <div class="stat"><span class="stat-label">Bonus:</span> +20% velocidad viaje</div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="content-card rarity-mythic">
+                    <div class="card-header">
+                        <span class="card-icon">👑</span>
+                        <div class="card-title">
+                            <h3>Campeón de Eldoria</h3>
+                            <span class="rarity-tag">Título Mítico</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-description">El título más prestigioso. Solo para quienes completen todos los
+                            desafíos del juego.</p>
+                        <div class="card-stats">
+                            <div class="stat"><span class="stat-label">Requisito:</span> 100% contenido</div>
+                            <div class="stat"><span class="stat-label">Bonus:</span> Corona dorada exclusiva</div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <svg class="footer-emblem" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="25" cy="25" r="23" stroke="#d4a84b" stroke-width="2" fill="none" />
+            <path d="M25 8L32 22L46 25L32 28L25 42L18 28L4 25L18 22L25 8Z" fill="#d4a84b" opacity="0.8" />
+        </svg>
+        <p>Los Archivos de Eldoria &copy; 2026</p>
+        <p style="margin-top: 10px; opacity: 0.6;">
+            <a href="../../index.html">Volver al Inicio</a>
+        </p>
+    </footer>
+
+    <script src="../../js/script.js"></script>
+</body>
+
+</html>

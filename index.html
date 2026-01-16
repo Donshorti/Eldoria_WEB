@@ -48,13 +48,91 @@
         </div>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="#items">Objetos</a></li>
-            <li><a href="#map">Mapa</a></li>
-            <li><a href="#history">Historia</a></li>
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <div class="sidebar-logo">
+                <svg class="crown-icon" viewBox="0 0 100 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="sidebarGoldGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" stop-color="#f4d675" />
+                            <stop offset="50%" stop-color="#d4a84b" />
+                            <stop offset="100%" stop-color="#8b6914" />
+                        </linearGradient>
+                    </defs>
+                    <path d="M50 5L65 30L85 15L75 50H25L15 15L35 30L50 5Z" fill="url(#sidebarGoldGrad)" stroke="#f4d675"
+                        stroke-width="2" />
+                    <rect x="20" y="50" width="60" height="15" rx="3" fill="url(#sidebarGoldGrad)" stroke="#f4d675"
+                        stroke-width="2" />
+                </svg>
+            </div>
+            <div class="sidebar-title">Eldoria Wiki</div>
+        </div>
+        <ul class="sidebar-menu">
+            <li class="sidebar-item">
+                <a href="index.html" class="sidebar-link active">
+                    <span class="sidebar-icon">🏠</span>
+                    <span>Inicio</span>
+                </a>
+            </li>
+
+            <li class="sidebar-section-header">Objetos</li>
+            <li class="sidebar-item">
+                <a href="sections/items/fruits.html" class="sidebar-link sidebar-link-sub">
+                    <span class="sidebar-icon">🍎</span>
+                    <span>Frutas</span>
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a href="sections/items/equipment.html" class="sidebar-link sidebar-link-sub">
+                    <span class="sidebar-icon">⚔️</span>
+                    <span>Equipo</span>
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a href="sections/items/rewards.html" class="sidebar-link sidebar-link-sub">
+                    <span class="sidebar-icon">🏆</span>
+                    <span>Premios</span>
+                </a>
+            </li>
+
+            <li class="sidebar-section-header">Mapa</li>
+            <li class="sidebar-item">
+                <a href="sections/map/cities.html" class="sidebar-link sidebar-link-sub">
+                    <span class="sidebar-icon">🏰</span>
+                    <span>Ciudades</span>
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a href="sections/map/dungeons.html" class="sidebar-link sidebar-link-sub">
+                    <span class="sidebar-icon">⛓️</span>
+                    <span>Mazmorras</span>
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a href="sections/map/bossarenas.html" class="sidebar-link sidebar-link-sub">
+                    <span class="sidebar-icon">👹</span>
+                    <span>Jefes</span>
+                </a>
+            </li>
+
+            <li class="sidebar-section-header">Historia</li>
+            <li class="sidebar-item">
+                <a href="sections/history/characters.html" class="sidebar-link sidebar-link-sub">
+                    <span class="sidebar-icon">�</span>
+                    <span>Personajes</span>
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a href="sections/history/lore.html" class="sidebar-link sidebar-link-sub">
+                    <span class="sidebar-icon">📜</span>
+                    <span>Lore</span>
+                </a>
+            </li>
         </ul>
-    </nav>
+        <div class="sidebar-footer">
+            <p>Eldoria &copy; 2026</p>
+        </div>
+    </aside>
 
     <main>
         <section class="welcome">
@@ -80,7 +158,7 @@
                     <p>Descubre las frutas encantadas esparcidas por Eldoria, cada una otorga habilidades únicas a
                         aquellos lo suficientemente valientes para consumirlas. Desde la ardiente Baya de Brasas hasta
                         la etérea Ciruela Fantasma.</p>
-                    <a href="#" class="card-link">Explorar Frutas</a>
+                    <a href="sections/items/fruits.html" class="card-link">Explorar Frutas</a>
                 </article>
 
                 <article class="section-card card-equipment" id="equipment">
@@ -89,7 +167,7 @@
                     <p>Explora el arsenal de armas, armaduras, accesorios y consumibles. Desde herramientas comunes
                         hasta artefactos legendarios, encuentra lo que necesitas para convertirte en un verdadero
                         campeón.</p>
-                    <a href="#" class="card-link">Ver Arsenal</a>
+                    <a href="sections/items/equipment.html" class="card-link">Ver Arsenal</a>
                 </article>
 
                 <article class="section-card card-rewards" id="rewards">
@@ -97,7 +175,7 @@
                     <h3>Recompensas</h3>
                     <p>Tesoros ganados a través de misiones, logros y eventos especiales. Monedas, gemas, cofres
                         misteriosos y premios exclusivos esperan a los aventureros más dedicados.</p>
-                    <a href="#" class="card-link">Ver Recompensas</a>
+                    <a href="sections/items/rewards.html" class="card-link">Ver Recompensas</a>
                 </article>
             </div>
         </section>
@@ -115,7 +193,7 @@
                     <h3>Ciudades y Regiones</h3>
                     <p>Explora las grandes capitales, aldeas ocultas y territorios peligrosos de Eldoria. Cada ubicación
                         guarda oportunidades únicas, peligros y secretos por descubrir.</p>
-                    <a href="#" class="card-link">Ver el Mapa</a>
+                    <a href="sections/map/cities.html" class="card-link">Ver el Mapa</a>
                 </article>
 
                 <article class="section-card card-bosses" id="bosses">
@@ -124,7 +202,7 @@
                     <p>Templa tu coraje y prepárate para la batalla. Estas criaturas legendarias custodian tesoros
                         poderosos pero exigen la prueba definitiva de habilidad y trabajo en equipo para derrotarlas.
                     </p>
-                    <a href="#" class="card-link">Estudiar las Bestias</a>
+                    <a href="sections/map/bossarenas.html" class="card-link">Estudiar las Bestias</a>
                 </article>
 
                 <article class="section-card card-dungeons" id="dungeons">
@@ -132,7 +210,7 @@
                     <h3>Mazmorras</h3>
                     <p>Lugares oscuros y peligrosos llenos de monstruos, trampas y botín legendario. Desde criptas
                         olvidadas hasta fortalezas demoníacas, cada mazmorra ofrece desafíos únicos.</p>
-                    <a href="#" class="card-link">Explorar Mazmorras</a>
+                    <a href="sections/map/dungeons.html" class="card-link">Explorar Mazmorras</a>
                 </article>
             </div>
         </section>
@@ -150,7 +228,7 @@
                     <h3>Personajes y NPCs</h3>
                     <p>Conoce a los habitantes de nuestro mundo — desde sabios que ofrecen misiones hasta misteriosos
                         mercaderes que venden mercancías raras. Aprende sus historias y gánate su confianza.</p>
-                    <a href="#" class="card-link">Conocer al Pueblo</a>
+                    <a href="sections/history/characters.html" class="card-link">Conocer al Pueblo</a>
                 </article>
 
                 <article class="section-card card-lore" id="lore">
@@ -158,7 +236,7 @@
                     <h3>Tradiciones del Mundo</h3>
                     <p>Desentraña los misterios de la creación de Eldoria, las guerras antiguas entre dioses y las
                         profecías que predicen el destino del reino. Cada leyenda tiene un grano de verdad.</p>
-                    <a href="#" class="card-link">Leer las Crónicas</a>
+                    <a href="sections/history/lore.html" class="card-link">Leer las Crónicas</a>
                 </article>
             </div>
         </section>
