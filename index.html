@@ -1,1 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Wiki de Eldoria - Tu guía completa del servidor de fantasía medieval. Descubre frutas mágicas, explora mazmorras, conoce personajes y leyendas.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap"
+        rel="stylesheet">
+    <title>Eldoria Wiki</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Partículas flotantes -->
+    <div class="particles" id="particles"></div>
+
+    <header>
+        <div class="logo-container">
+            <svg class="crown-icon" viewBox="0 0 100 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" stop-color="#f4d675" />
+                        <stop offset="50%" stop-color="#d4a84b" />
+                        <stop offset="100%" stop-color="#8b6914" />
+                    </linearGradient>
+                </defs>
+                <path d="M50 5L65 30L85 15L75 50H25L15 15L35 30L50 5Z" fill="url(#goldGrad)" stroke="#f4d675"
+                    stroke-width="2" />
+                <rect x="20" y="50" width="60" height="15" rx="3" fill="url(#goldGrad)" stroke="#f4d675"
+                    stroke-width="2" />
+                <circle cx="50" cy="25" r="5" fill="#8b1a1a" />
+                <circle cx="30" cy="35" r="4" fill="#4a1a6b" />
+                <circle cx="70" cy="35" r="4" fill="#1a4a2e" />
+                <path d="M25 70H75" stroke="#d4a84b" stroke-width="3" stroke-linecap="round" />
+            </svg>
+        </div>
+        <h1>Reino de Eldoria</h1>
+        <p class="subtitle">El Compendio Completo del Servidor</p>
+        <div class="divider">
+            <div class="divider-line"></div>
+            <div class="divider-gem"></div>
+            <div class="divider-line"></div>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#items">Objetos</a></li>
+            <li><a href="#map">Mapa</a></li>
+            <li><a href="#history">Historia</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="welcome">
+            <h2>Bienvenido, Viajero</h2>
+            <p>Has encontrado los archivos sagrados de Eldoria — un compendio de todo el conocimiento reunido desde los
+                confines más lejanos de nuestro reino. Dentro de estas páginas yacen los secretos de las frutas mágicas
+                que otorgan poderes extraordinarios, relatos de héroes antiguos, mapas de ciudades magníficas y
+                advertencias sobre bestias temibles que acechan en las sombras. Que esta sabiduría guíe tu viaje a
+                través de nuestro mundo místico.</p>
+        </section>
+
+        <!-- OBJETOS -->
+        <section class="category-section" id="items">
+            <div class="category-header">
+                <div class="category-icon">🎒</div>
+                <h2>Objetos</h2>
+                <p class="category-desc">Todo el equipamiento, recompensas y frutas mágicas de Eldoria</p>
+            </div>
+            <div class="subcategory-grid">
+                <article class="section-card card-fruits" id="fruits">
+                    <div class="card-icon">🍎</div>
+                    <h3>Frutas Mágicas</h3>
+                    <p>Descubre las frutas encantadas esparcidas por Eldoria, cada una otorga habilidades únicas a
+                        aquellos lo suficientemente valientes para consumirlas. Desde la ardiente Baya de Brasas hasta
+                        la etérea Ciruela Fantasma.</p>
+                    <a href="#" class="card-link">Explorar Frutas</a>
+                </article>
+
+                <article class="section-card card-equipment" id="equipment">
+                    <div class="card-icon">⚔️</div>
+                    <h3>Equipamiento</h3>
+                    <p>Explora el arsenal de armas, armaduras, accesorios y consumibles. Desde herramientas comunes
+                        hasta artefactos legendarios, encuentra lo que necesitas para convertirte en un verdadero
+                        campeón.</p>
+                    <a href="#" class="card-link">Ver Arsenal</a>
+                </article>
+
+                <article class="section-card card-rewards" id="rewards">
+                    <div class="card-icon">🏆</div>
+                    <h3>Recompensas</h3>
+                    <p>Tesoros ganados a través de misiones, logros y eventos especiales. Monedas, gemas, cofres
+                        misteriosos y premios exclusivos esperan a los aventureros más dedicados.</p>
+                    <a href="#" class="card-link">Ver Recompensas</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- MAPA -->
+        <section class="category-section" id="map">
+            <div class="category-header">
+                <div class="category-icon">🗺️</div>
+                <h2>Mapa</h2>
+                <p class="category-desc">Explora las tierras, ciudades y territorios peligrosos del reino</p>
+            </div>
+            <div class="subcategory-grid">
+                <article class="section-card card-cities" id="cities">
+                    <div class="card-icon">🏰</div>
+                    <h3>Ciudades y Regiones</h3>
+                    <p>Explora las grandes capitales, aldeas ocultas y territorios peligrosos de Eldoria. Cada ubicación
+                        guarda oportunidades únicas, peligros y secretos por descubrir.</p>
+                    <a href="#" class="card-link">Ver el Mapa</a>
+                </article>
+
+                <article class="section-card card-bosses" id="bosses">
+                    <div class="card-icon">🐉</div>
+                    <h3>Zonas de Jefes</h3>
+                    <p>Templa tu coraje y prepárate para la batalla. Estas criaturas legendarias custodian tesoros
+                        poderosos pero exigen la prueba definitiva de habilidad y trabajo en equipo para derrotarlas.
+                    </p>
+                    <a href="#" class="card-link">Estudiar las Bestias</a>
+                </article>
+
+                <article class="section-card card-dungeons" id="dungeons">
+                    <div class="card-icon">🏚️</div>
+                    <h3>Mazmorras</h3>
+                    <p>Lugares oscuros y peligrosos llenos de monstruos, trampas y botín legendario. Desde criptas
+                        olvidadas hasta fortalezas demoníacas, cada mazmorra ofrece desafíos únicos.</p>
+                    <a href="#" class="card-link">Explorar Mazmorras</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- HISTORIA -->
+        <section class="category-section" id="history">
+            <div class="category-header">
+                <div class="category-icon">📖</div>
+                <h2>Historia</h2>
+                <p class="category-desc">Los personajes legendarios y las tradiciones ancestrales del mundo</p>
+            </div>
+            <div class="subcategory-grid">
+                <article class="section-card card-characters" id="characters">
+                    <div class="card-icon">👤</div>
+                    <h3>Personajes y NPCs</h3>
+                    <p>Conoce a los habitantes de nuestro mundo — desde sabios que ofrecen misiones hasta misteriosos
+                        mercaderes que venden mercancías raras. Aprende sus historias y gánate su confianza.</p>
+                    <a href="#" class="card-link">Conocer al Pueblo</a>
+                </article>
+
+                <article class="section-card card-lore" id="lore">
+                    <div class="card-icon">📜</div>
+                    <h3>Tradiciones del Mundo</h3>
+                    <p>Desentraña los misterios de la creación de Eldoria, las guerras antiguas entre dioses y las
+                        profecías que predicen el destino del reino. Cada leyenda tiene un grano de verdad.</p>
+                    <a href="#" class="card-link">Leer las Crónicas</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- ACTUALIZACIONES -->
+        <section class="updates">
+            <h2>✦ Actualizaciones Recientes ✦</h2>
+            <div class="update-list">
+                <div class="update-item">
+                    <span class="update-date">15 Ene</span>
+                    <div class="update-content">
+                        <h4>El Wyrm de las Sombras Despierta <span class="update-tag tag-event">Evento</span></h4>
+                        <p>Un nuevo jefe mundial ha emergido de las Profundidades Abisales. ¡Reúne a tu gremio y
+                            prepárate para la batalla!</p>
+                    </div>
+                </div>
+                <div class="update-item">
+                    <span class="update-date">12 Ene</span>
+                    <div class="update-content">
+                        <h4>Expansión de Ciudad Estelar <span class="update-tag tag-new">Nuevo</span></h4>
+                        <p>La capital celestial se ha expandido con nuevos distritos, mercaderes y una gran arena.</p>
+                    </div>
+                </div>
+                <div class="update-item">
+                    <span class="update-date">8 Ene</span>
+                    <div class="update-content">
+                        <h4>Renovación del Sistema de Artesanía <span class="update-tag tag-update">Actualización</span>
+                        </h4>
+                        <p>Se han añadido nuevas recetas, materiales y estaciones de artesanía en todas las profesiones.
+                        </p>
+                    </div>
+                </div>
+                <div class="update-item">
+                    <span class="update-date">5 Ene</span>
+                    <div class="update-content">
+                        <h4>Descubrimiento de la Fruta del Vacío <span class="update-tag tag-new">Nuevo</span></h4>
+                        <p>Una misteriosa nueva fruta mágica ha sido descubierta. Sus poderes permanecen desconocidos...
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <svg class="footer-emblem" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="25" cy="25" r="23" stroke="#d4a84b" stroke-width="2" fill="none" />
+            <path d="M25 8L32 22L46 25L32 28L25 42L18 28L4 25L18 22L25 8Z" fill="#d4a84b" opacity="0.8" />
+        </svg>
+        <p>Los Archivos de Eldoria &copy; 2026</p>
+        <p style="margin-top: 10px; opacity: 0.6;">
+            <a href="#">Reglas del Servidor</a> · <a href="#">Discord</a> · <a href="#">Soporte</a>
+        </p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
